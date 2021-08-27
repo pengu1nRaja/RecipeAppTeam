@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		67AC253B26D90A9D00DF7ED1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AC253A26D90A9D00DF7ED1 /* AppDelegate.swift */; };
 		67AC253D26D90A9D00DF7ED1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AC253C26D90A9D00DF7ED1 /* SceneDelegate.swift */; };
-		67AC253F26D90A9D00DF7ED1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AC253E26D90A9D00DF7ED1 /* ViewController.swift */; };
-		67AC254226D90A9D00DF7ED1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AC254026D90A9D00DF7ED1 /* Main.storyboard */; };
 		67AC254426D90AA500DF7ED1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67AC254326D90AA500DF7ED1 /* Assets.xcassets */; };
 		67AC254726D90AA500DF7ED1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AC254526D90AA500DF7ED1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +17,6 @@
 		67AC253726D90A9D00DF7ED1 /* RecipeAppTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeAppTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AC253A26D90A9D00DF7ED1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67AC253C26D90A9D00DF7ED1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		67AC253E26D90A9D00DF7ED1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		67AC254126D90A9D00DF7ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67AC254326D90AA500DF7ED1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67AC254626D90AA500DF7ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67AC254826D90AA500DF7ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +52,37 @@
 		67AC253926D90A9D00DF7ED1 /* RecipeAppTeam */ = {
 			isa = PBXGroup;
 			children = (
-				67AC253A26D90A9D00DF7ED1 /* AppDelegate.swift */,
-				67AC253C26D90A9D00DF7ED1 /* SceneDelegate.swift */,
-				67AC253E26D90A9D00DF7ED1 /* ViewController.swift */,
-				67AC254026D90A9D00DF7ED1 /* Main.storyboard */,
-				67AC254326D90AA500DF7ED1 /* Assets.xcassets */,
-				67AC254526D90AA500DF7ED1 /* LaunchScreen.storyboard */,
-				67AC254826D90AA500DF7ED1 /* Info.plist */,
+				67AC255526D9106300DF7ED1 /* Supporting Files */,
+				67AC255626D9107900DF7ED1 /* Resources */,
+				67AC255726D9108500DF7ED1 /* Storyboards */,
 			);
 			path = RecipeAppTeam;
+			sourceTree = "<group>";
+		};
+		67AC255526D9106300DF7ED1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				67AC253A26D90A9D00DF7ED1 /* AppDelegate.swift */,
+				67AC253C26D90A9D00DF7ED1 /* SceneDelegate.swift */,
+				67AC254826D90AA500DF7ED1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67AC255626D9107900DF7ED1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67AC254326D90AA500DF7ED1 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		67AC255726D9108500DF7ED1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				67AC254526D90AA500DF7ED1 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +144,6 @@
 			files = (
 				67AC254726D90AA500DF7ED1 /* LaunchScreen.storyboard in Resources */,
 				67AC254426D90AA500DF7ED1 /* Assets.xcassets in Resources */,
-				67AC254226D90A9D00DF7ED1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +154,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67AC253F26D90A9D00DF7ED1 /* ViewController.swift in Sources */,
 				67AC253B26D90A9D00DF7ED1 /* AppDelegate.swift in Sources */,
 				67AC253D26D90A9D00DF7ED1 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +162,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		67AC254026D90A9D00DF7ED1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				67AC254126D90A9D00DF7ED1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		67AC254526D90AA500DF7ED1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,7 +296,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8C7N2PLY3;
-				INFOPLIST_FILE = RecipeAppTeam/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RecipeAppTeam/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.albertRazhapov.RecipeAppTeam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8C7N2PLY3;
-				INFOPLIST_FILE = RecipeAppTeam/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RecipeAppTeam/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.albertRazhapov.RecipeAppTeam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
