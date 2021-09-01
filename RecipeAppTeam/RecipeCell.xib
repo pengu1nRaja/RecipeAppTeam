@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,61 +17,65 @@
                 <rect key="frame" x="0.0" y="0.0" width="338" height="127"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Wjw-EK-ta5">
-                        <rect key="frame" x="8" y="7" width="101.5" height="112"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название рецепта" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGa-se-LKp">
-                        <rect key="frame" x="117.5" y="16" width="147.5" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Название рецепта" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HGa-se-LKp">
+                        <rect key="frame" x="123" y="12" width="166" height="35"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CXI-9L-hkJ">
-                        <rect key="frame" x="117" y="46.5" width="205" height="22"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="количество ингредиентов:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04I-vz-MS6">
-                                <rect key="frame" x="0.0" y="0.0" width="145" height="22"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3M-WY-wW5">
-                                <rect key="frame" x="155" y="0.0" width="20" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="9pO-oZ-CQM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMG-R5-buG">
-                                <rect key="frame" x="185" y="0.0" width="20" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="Aog-0J-MlP"/>
-                                </constraints>
-                                <state key="normal" image="checkmark.circle" catalog="system"/>
-                            </button>
-                        </subviews>
-                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Wjw-EK-ta5">
+                        <rect key="frame" x="7" y="11.5" width="101.5" height="103"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Wjw-EK-ta5" secondAttribute="height" multiplier="1:1" id="b7k-Sl-ZMX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3M-WY-wW5">
+                        <rect key="frame" x="163" y="70" width="10.5" height="29.5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="list.bullet.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MZq-1E-FUO">
+                        <rect key="frame" x="123" y="73" width="32" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="deC-hC-H4e">
+                        <rect key="frame" x="190" y="72" width="32" height="22"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="первое" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mi-Ft-kXs">
+                        <rect key="frame" x="224" y="75" width="49" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eBi-pa-nro">
+                        <rect key="frame" x="303" y="70.5" width="26" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Wjw-EK-ta5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="16K-Wa-d8c"/>
-                    <constraint firstItem="CXI-9L-hkJ" firstAttribute="top" secondItem="HGa-se-LKp" secondAttribute="bottom" constant="10" id="FtE-gC-va1"/>
-                    <constraint firstAttribute="bottom" secondItem="Wjw-EK-ta5" secondAttribute="bottom" constant="8" id="J93-4N-uGv"/>
-                    <constraint firstItem="CXI-9L-hkJ" firstAttribute="leading" secondItem="Wjw-EK-ta5" secondAttribute="trailing" constant="7.5" id="JsC-oJ-AqG"/>
-                    <constraint firstItem="Wjw-EK-ta5" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.3" id="OGO-Ae-1c7"/>
-                    <constraint firstItem="Wjw-EK-ta5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="PUG-hS-meD"/>
-                    <constraint firstItem="HGa-se-LKp" firstAttribute="leading" secondItem="Wjw-EK-ta5" secondAttribute="trailing" constant="8" id="T3j-sF-bQE"/>
-                    <constraint firstItem="HGa-se-LKp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="n0i-h6-a8b"/>
-                    <constraint firstAttribute="trailing" secondItem="CXI-9L-hkJ" secondAttribute="trailing" constant="16" id="x4i-uc-76d"/>
+                    <constraint firstItem="Wjw-EK-ta5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WuG-Bf-c9r"/>
+                    <constraint firstItem="Wjw-EK-ta5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="YIO-Qa-f3G"/>
+                    <constraint firstItem="Wjw-EK-ta5" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.8" id="bpu-au-erC"/>
+                    <constraint firstItem="deC-hC-H4e" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.1" id="sbU-Rc-wB2"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="categoryImageView" destination="deC-hC-H4e" id="oYa-4Q-fNz"/>
+                <outlet property="ingredientsImageView" destination="MZq-1E-FUO" id="TLi-Kk-ehX"/>
+                <outlet property="recipeImageView" destination="Wjw-EK-ta5" id="shP-5K-Hxm"/>
+            </connections>
             <point key="canvasLocation" x="118.84057971014494" y="113.50446428571428"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="checkmark.circle" catalog="system" width="128" height="121"/>
+        <image name="food" width="512" height="512"/>
+        <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
     </resources>
 </document>

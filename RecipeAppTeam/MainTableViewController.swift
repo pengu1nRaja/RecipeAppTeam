@@ -27,13 +27,16 @@ class MainTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! RecipeCell
-
+//        let imageView = UIImageView(image: UIImage(named: "foodPng"))
+//        imageView.setImageColor(color: UIColor.purple)
+        
+        cell.categoryImageView.setImageColor(color: .systemRed)
         return cell
     }
 }
 
 extension MainTableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        100
+        tableView.frame.width * 0.4
     }
 }
