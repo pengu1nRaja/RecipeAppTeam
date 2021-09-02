@@ -16,7 +16,13 @@ class MainTableViewController: UITableViewController {
         
         let nib = UINib(nibName: "RecipeCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: reuseIdentifier)
-
+        
+        title = "Рецепты"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        tabBarItem.image = UIImage(systemName: "circle")
+        tabBarItem.title = "Рецепты"
+        
     }
 
     // MARK: - Table view data source
@@ -27,11 +33,12 @@ class MainTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! RecipeCell
-//        let imageView = UIImageView(image: UIImage(named: "foodPng"))
-//        imageView.setImageColor(color: UIColor.purple)
-        
         cell.categoryImageView.setImageColor(color: .systemRed)
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        present(RecipeDetailsViewController(), animated: true)
     }
 }
 
