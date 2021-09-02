@@ -16,8 +16,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         window?.makeKeyAndVisible()
-        let mainVC = MainTableViewController()
-        window?.rootViewController = UINavigationController(rootViewController: mainVC)
+//        let mainVC = MainTableViewController()
+        let shopVC = ShopListViewController()
+        window?.rootViewController = UINavigationController(rootViewController: shopVC)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

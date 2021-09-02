@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3061F626E1324700465169 /* ShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3061F526E1324700465169 /* ShopListViewController.swift */; };
 		673C58A026DF8D31001F7923 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673C589E26DF8D31001F7923 /* MainTableViewController.swift */; };
 		673C58A826DF90F2001F7923 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673C58A626DF90F2001F7923 /* RecipeCell.swift */; };
 		673C58A926DF90F2001F7923 /* RecipeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 673C58A726DF90F2001F7923 /* RecipeCell.xib */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A3061F526E1324700465169 /* ShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListViewController.swift; sourceTree = "<group>"; };
 		673C589E26DF8D31001F7923 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		673C58A626DF90F2001F7923 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		673C58A726DF90F2001F7923 /* RecipeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeCell.xib; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 				673C589E26DF8D31001F7923 /* MainTableViewController.swift */,
 				673C58A626DF90F2001F7923 /* RecipeCell.swift */,
 				673C58A726DF90F2001F7923 /* RecipeCell.xib */,
+				0A3061F526E1324700465169 /* ShopListViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				67AC253B26D90A9D00DF7ED1 /* AppDelegate.swift in Sources */,
 				673C58A026DF8D31001F7923 /* MainTableViewController.swift in Sources */,
 				67AC253D26D90A9D00DF7ED1 /* SceneDelegate.swift in Sources */,
+				0A3061F626E1324700465169 /* ShopListViewController.swift in Sources */,
 				673C58A826DF90F2001F7923 /* RecipeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
